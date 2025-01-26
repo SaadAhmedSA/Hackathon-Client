@@ -9,11 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.5.0",
+    "axios": "^1.7.9",
+    "next": "15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.1.6"
+    "react-qr-code": "^2.0.15",
+    "react-redux": "^9.2.0",
+    "sweetalert2": "^11.15.10"
   },
   "devDependencies": {
+    "daisyui": "^4.12.23",
     "postcss": "^8",
     "tailwindcss": "^3.4.1"
   }
