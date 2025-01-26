@@ -16,7 +16,7 @@ const Page = () => {
     const password = passwordRef.current.value;
 
     try {
-      const response = await axios.post("http://localhost:5000/api/v1/login", {
+      const response = await axios.post("https://hackathon-project-server.vercel.app/api/v1/login", {
         email,
         password,
       });

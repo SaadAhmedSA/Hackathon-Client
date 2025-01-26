@@ -75,7 +75,7 @@ const Page = () => {
     localStorage.setItem('email', email);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/v1/addloan', loanData);
+      const response = await axios.post('https://hackathon-project-server.vercel.app/api/v1/addloan', loanData);
       console.log(response.data);
       setIsPopupOpen(true);
     } catch (error) {
@@ -118,7 +118,7 @@ const Page = () => {
       };
 
       try {
-        const response = await axios.post('http://localhost:5000/api/v1/register', userData);
+        const response = await axios.post('https://hackathon-project-server.vercel.app/api/v1/register', userData);
         console.log(response.data);
         Swal.fire("Loan Request Submitted");
         const query = new URLSearchParams(newuserData).toString();

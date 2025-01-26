@@ -18,7 +18,7 @@ const LoanTable = () => {
       if (!email) throw new Error("Email not found in local storage.");
 
       // Send POST request with email
-      const response = await axios.post("http://localhost:5000/api/v1/getemail", {
+      const response = await axios.post("https://hackathon-project-server.vercel.app/api/v1/getemail", {
         email,
       });
 
